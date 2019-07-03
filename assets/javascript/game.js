@@ -14,7 +14,7 @@ for (var i = 0; i < 4; i++) {
     var random = Math.floor(Math.random() *  12);
     console.log(random);
 
-    var crystal = $('<div>');
+    var crystal = $('<btn-lg>');
     crystal.attr({
         "class": 'crystal',
         "data-random": random
@@ -27,13 +27,16 @@ for (var i = 0; i < 4; i++) {
 
 //When the player clicks on a crystal, it will add a specific amount of points to the plays total score.
     $("crystal").click(function(){
+        userScore = userScore + crystal;
         
-    
-    //When they do click one, update the player's score counter.
+        console.log();
 
+    
+
+    
 
     //Create random number that you have to guess is between 19 and 120
-    });
+    
 
 //If the total score matches the random number, then the player wins.
 
@@ -43,3 +46,4 @@ for (var i = 0; i < 4; i++) {
 
 // Show the number of games the player wins and loses.
 
+    });

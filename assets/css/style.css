@@ -1,5 +1,6 @@
 body{
     background-image: url("c:/Users/jjmat/unit-4-game/assets/images/abstract.jpg");
+    padding:5px;
 }
 
 .container1{
@@ -43,6 +44,15 @@ body{
 .crystals{
     width:500px;
     height:100px;
+    display:flex;
+    background-color:blue;
 }
+.crystal{
+width:100px;
+background-color:green;
+margin:5px;
+}
+
+
 
 
