@@ -6,20 +6,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 
 <body>
     <div class="row">
 
 
-        <div class="container">
-            <h1>CrystalsCollector!</h1>
+        <div class="container1">
+            <h1>Crystals Collector!</h1>
         </div>
 
     </div>
 
     <div class="row">
-        <div class="container" style="">
+        <div class="container2">
             You will be given a random number at the start of the game.
             <br>
             There are four crystals below. By clicking on a crystal you will add a specific amount of point to your
@@ -36,31 +38,30 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" id="randomNumber">
             <h3>"random-number"</h3>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2" id="winloss">
             <h2>Wins: </h2>
             <h2>Losses: </h2>
         </div>
     </div>
 
     <div class="row">
-        <div class="container">
-            <btn>red</btn>
-            <btn>blue</btn>
-            <btn>yellow</btn>
-            <btn>green</btn>
+        <div class="crystals">
+            
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="totalScore">
         Your total score is:
     </div>
 
+    <div id="totalScore2"></div>
 
 
 
 
 
-</body>i dont konw what else to type lol
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>

@@ -1,0 +1,48 @@
+body{
+    background-image: url("c:/Users/jjmat/unit-4-game/assets/images/abstract.jpg");
+}
+
+.container1{
+    background-color:orange;
+    color:white;
+    font-size:30px;
+    height:100px;
+    padding:25px
+}
+
+.container2{
+    background-color: bisque;
+    color:green;
+    width:500px;
+    margin-top:20px;
+}
+
+#randomNumber{
+    background-color:green;
+    margin:10px;
+}
+
+#winloss{
+    background-color:cyan;
+    margin:10px;
+}
+
+#totalScore{
+    background-color:darkcyan;
+    width:300px;
+    margin:5px;
+}
+
+#totalScore2{
+    background-color: darkcyan;
+    height:100px;
+    width:300px;
+    margin:5px;
+}
+
+.crystals{
+    width:500px;
+    height:100px;
+}
+
+
