@@ -1,12 +1,14 @@
 //Create variables
 var randomResult;
-var wins;
-var losses;
+var wins = 0;
+var losses = 0;
 var userScore = "";
 
 //A game with 4 crystals and a random result
-randomResult = Math.floor(Math.random() * 120 - 5);
-$("#result").html('Random Result : ' + randomResult);
+
+//Create random number that you have to guess is between 19 and 120
+randomResult = Math.floor(Math.random() * 120) + 1;
+$("#randomNum").html('Random Number: ' + randomResult);
 
 
 // Every crystal needs to have a random number between 1 and 12
@@ -29,13 +31,9 @@ for (var i = 0; i < 4; i++) {
     $("crystal").click(function(){
         userScore = userScore + crystal;
         
-        console.log();
-
+        console.log(crystal);
     
-
-    
-
-    //Create random number that you have to guess is between 19 and 120
+    });
     
 
 //If the total score matches the random number, then the player wins.
@@ -46,4 +44,4 @@ for (var i = 0; i < 4; i++) {
 
 // Show the number of games the player wins and loses.
 
-    });
+   
