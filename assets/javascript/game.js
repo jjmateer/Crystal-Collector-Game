@@ -2,7 +2,7 @@
 var randomResult;
 var wins = 0;
 var losses = 0;
-var userScore = "";
+var userScore = 0;
 
 //A game with 4 crystals and a random result
 
@@ -16,7 +16,7 @@ for (var i = 0; i < 4; i++) {
     var random = Math.floor(Math.random() *  12);
     console.log(random);
 
-    var crystal = $('<btn-lg>');
+    var crystal = $('<button>');
     crystal.attr({
         "class": 'crystal',
         "data-random": random
@@ -28,11 +28,11 @@ for (var i = 0; i < 4; i++) {
 }
 
 //When the player clicks on a crystal, it will add a specific amount of points to the plays total score.
-    $("crystal").click(function(){
-        userScore = userScore + crystal;
-        
-        console.log(crystal);
-    
+    $(".crystal").click(function(){
+        userScore = crystal + userScore
+
+        $('#totalScore2').append(userScore);
+
     });
     
 
@@ -44,4 +44,3 @@ for (var i = 0; i < 4; i++) {
 
 // Show the number of games the player wins and loses.
 
-   
