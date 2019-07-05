@@ -47,12 +47,27 @@ body{
     display:flex;
     background-color:blue;
 }
-.crystal{
+#red, #blue, #white, #yellow{
 width:100px;
-background-color:green;
 margin:5px;
+background-size:100px;
+}
+#red{
+    background-image: url(c:/Users/jjmat/unit-4-game/assets/images/red.png);
 }
 
+#blue{
+    background-image: url(c:/Users/jjmat/unit-4-game/assets/images/blue.png);
+}
+
+#yellow{
+    background-image: url(c:/Users/jjmat/unit-4-game/assets/images/yellow.png);
+
+}
+
+#white{
+    background-image: url(c:/Users/jjmat/unit-4-game/assets/images/white.png);
+}
 #totalScore{
     font-size:30px;
 }
