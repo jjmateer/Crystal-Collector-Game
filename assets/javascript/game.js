@@ -17,7 +17,6 @@ $(document).ready(function () {
     var num3 = Math.floor(Math.random() * 12 + 1);
     var num4 = Math.floor(Math.random() * 12 + 1);
     
-    
     //Create a reset function
     function reset() {
         randomResult = Math.floor(Math.random() * 102 + 19);
@@ -29,8 +28,6 @@ $(document).ready(function () {
         userScore = 0;
     }
 
-
-    
     reset();
     // Create functions to count wins and loses and push them to the page.
     $('#winsText').text("Wins: " + wins);
@@ -54,14 +51,10 @@ $(document).ready(function () {
         userScore = num1 + userScore;
         if (userScore === randomResult) {
             win();
-            
-
-        }
+            }
         if (userScore > randomResult) {
             lose();
-            
-
-        }
+            }
         
         $('#totalScore2').text(userScore)
     });
@@ -70,14 +63,10 @@ $(document).ready(function () {
         userScore = num2 + userScore;
         if (userScore === randomResult) {
             win();
-            
-
-        }
+            }
         if (userScore > randomResult) {
             lose();
-            
-
-        }
+            }
 
         $('#totalScore2').text(userScore)
     });
@@ -86,14 +75,10 @@ $(document).ready(function () {
         userScore = num3 + userScore;
         if (userScore === randomResult) {
             win();
-            
-
-        }
+            }
         if (userScore > randomResult) {
             lose();
-            
-
-        }
+            }
 
         $('#totalScore2').text(userScore)
     });
@@ -102,16 +87,10 @@ $(document).ready(function () {
         userScore = num4 + userScore;
         if (userScore === randomResult) {
             win();
-            
-
         }
         if (userScore > randomResult) {
             lose();
-            
-
-        }
-
-
+            }
         $('#totalScore2').text(userScore)
     });
     
