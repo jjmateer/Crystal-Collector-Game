@@ -72,6 +72,13 @@ background-size:100px;
     font-size:30px;
 }
 
+#win-area{
+    background-color: green;
+    height:100px;
+    width:200px;
+    margin-left:30px;
+}
+
 
 
 
