@@ -8,49 +8,73 @@ body{
     color:white;
     font-size:30px;
     height:100px;
-    padding:25px
+    padding:25px;
+    margin-left:25%;
+    width:50%;
+    text-align:center;
+    
 }
 
 .container2{
     background-color: bisque;
     color:green;
-    width:500px;
+    width:50%;
     margin:20px;
+    margin-left:25%;
+    font-size:30px;
+
 }
 
 #randomNumber{
     background-color:green;
-    margin:10px;
+    height:100px;
+    margin-left:25%;
+    width:10%;
+    padding:5px;
 }
 
 #winloss{
     background-color:cyan;
-    margin:10px;
+    height:100px;
+    width:15%;
+    margin-right:25%;
+    float:right;
+    padding:5px;
 }
 
 #totalScore{
     background-color:darkcyan;
     width:300px;
     margin:5px;
+    width:50%;
+    margin-left:25%;
+    
 }
 
 #totalScore2{
     background-color: darkcyan;
     height:100px;
-    width:300px;
-    margin:5px;
+    width:50%;
+    margin-left:25%;
+    align-content: center;
+    font-size:30px;
 }
 
 .crystals{
-    width:500px;
-    height:100px;
+    width:50%;
+    height:125px;
     display:flex;
     background-color:blue;
+    margin-left:50%;
+    
+  ;
 }
 #red, #blue, #white, #yellow{
 width:100px;
-margin:5px;
-background-size:100px;
+height:100px;
+margin:10px;
+background-size:95px;
+background-repeat:no-repeat;
 }
 #red{
     background-image: url(c:/Users/jjmat/unit-4-game/assets/images/red.png);
@@ -75,10 +99,17 @@ background-size:100px;
 #win-area{
     background-color: green;
     height:100px;
-    width:200px;
-    margin-left:30px;
+    width:50%;
+    height:125px;
+    padding:5px;
+    font-size:30px;
+    float:right;
+    margin-right:50%;
 }
-
+.col{
+    padding:0px;
+    margin:0px;
+}
 
 
 

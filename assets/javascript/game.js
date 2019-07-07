@@ -6,14 +6,10 @@ $(document).ready(function () {
     var userScore = 0;
 
 
-
-    //A game with 4 crystals and a random result
-
     //Create random number that you have to guess is between 19 and 120
 
     randomResult = Math.floor(Math.random() * 102 + 19);
     $("#randomNum").html('Random Number: ' + randomResult);
-
 
     // Every crystal needs to have a random number between 1 and 12
 
@@ -21,8 +17,6 @@ $(document).ready(function () {
     var num2 = Math.floor(Math.random() * 12 + 1);
     var num3 = Math.floor(Math.random() * 12 + 1);
     var num4 = Math.floor(Math.random() * 12 + 1);
-
-
 
     //Create a reset function
     function reset() {
@@ -35,9 +29,6 @@ $(document).ready(function () {
         userScore = 0;
         console.log();
     }
-
-
-
 
     //When the player clicks on a crystal, it will add a specific amount of points to the players total score.
     $('#red').on("click", function () {
@@ -71,7 +62,6 @@ $(document).ready(function () {
 
         }
 
-
         $('#totalScore2').text(userScore)
     });
     $('#white').on("click", function () {
@@ -87,7 +77,6 @@ $(document).ready(function () {
             reset();
 
         }
-
 
         $('#totalScore2').text(userScore)
     });
@@ -110,23 +99,23 @@ $(document).ready(function () {
     });
 
     // Show the number of games the player wins and loses.
-
+    $('#winsText').text("Wins: " + wins);
+    $('#lossesText').text("Losses: " + losses);
     function win() {
-        alert("you won!");
+        $('#win-area').text("You win!!!")
         wins++;
-        $('#winsText').text(wins);
+        $('#winsText').text("Wins: " + wins);
         reset();
     }
 
     function lose() {
-        alert("you lose!");
+        $('#win-area').text("You lose!!!")
         losses++;
-        $('#lossesText').text(losses);
+        $('#lossesText').text("Losses: " + losses);
         reset();
     }
-    $('#winsText').text("Wins: " + wins);
-    $('#lossesText').text("Losses: " + losses);
-    //If the total score matches the random number, then the player wins.
+
+
 
     //The player loses if their score goes above the random number.
 
