@@ -2,7 +2,6 @@ body{
     background-image: url("c:/Users/jjmat/unit-4-game/assets/images/abstract.jpg");
     padding:5px;
 }
-
 .container1{
     background-color:orange;
     color:white;
@@ -14,7 +13,6 @@ body{
     text-align:center;
     
 }
-
 .container2{
     background-color: bisque;
     color:green;
@@ -24,7 +22,6 @@ body{
     font-size:30px;
 
 }
-
 #randomNumber{
     background-color:green;
     height:100px;
@@ -32,7 +29,6 @@ body{
     width:10%;
     padding:5px;
 }
-
 #winloss{
     background-color:cyan;
     height:100px;
@@ -41,7 +37,6 @@ body{
     float:right;
     padding:5px;
 }
-
 #totalScore{
     background-color:darkcyan;
     width:300px;
@@ -50,7 +45,6 @@ body{
     margin-left:25%;
     
 }
-
 #totalScore2{
     background-color: darkcyan;
     height:100px;
@@ -66,8 +60,7 @@ body{
     display:flex;
     background-color:blue;
     margin-left:50%;
-    
-  ;
+    padding-left:2%;
 }
 #red, #blue, #white, #yellow{
 width:100px;
@@ -86,7 +79,6 @@ background-repeat:no-repeat;
 
 #yellow{
     background-image: url(c:/Users/jjmat/unit-4-game/assets/images/yellow.png);
-
 }
 
 #white{

@@ -5,13 +5,12 @@ $(document).ready(function () {
     var losses = 0;
     var userScore = 0;
 
-
     //Create random number that you have to guess is between 19 and 120
 
     randomResult = Math.floor(Math.random() * 102 + 19);
     $("#randomNum").html('Random Number: ' + randomResult);
 
-    // Every crystal needs to have a random number between 1 and 12
+    // Make variables for the random value of each crystal
 
     var num1 = Math.floor(Math.random() * 12 + 1);
     var num2 = Math.floor(Math.random() * 12 + 1);
@@ -29,8 +28,22 @@ $(document).ready(function () {
         userScore = 0;
         console.log();
     }
-
-    //When the player clicks on a crystal, it will add a specific amount of points to the players total score.
+    // Show the number of games the player wins and loses and create functions to count wins and loses.
+    $('#winsText').text("Wins: " + wins);
+    $('#lossesText').text("Losses: " + losses);
+    function win() {
+        $('#win-area').text("You win!!!")
+        wins++;
+        $('#winsText').text("Wins: " + wins);
+        reset();
+    }
+    function lose() {
+        $('#win-area').text("You lose!!!")
+        losses++;
+        $('#lossesText').text("Losses: " + losses);
+        reset();
+    }
+    //Create on click functions for each crystal with if statements that determine if you win or lose and trigger a reset.
     $('#red').on("click", function () {
 
         userScore = num1 + userScore;
@@ -44,7 +57,6 @@ $(document).ready(function () {
             reset();
 
         }
-
 
         $('#totalScore2').text(userScore)
     });
@@ -97,27 +109,4 @@ $(document).ready(function () {
 
         $('#totalScore2').text(userScore)
     });
-
-    // Show the number of games the player wins and loses.
-    $('#winsText').text("Wins: " + wins);
-    $('#lossesText').text("Losses: " + losses);
-    function win() {
-        $('#win-area').text("You win!!!")
-        wins++;
-        $('#winsText').text("Wins: " + wins);
-        reset();
-    }
-
-    function lose() {
-        $('#win-area').text("You lose!!!")
-        losses++;
-        $('#lossesText').text("Losses: " + losses);
-        reset();
-    }
-
-
-
-    //The player loses if their score goes above the random number.
-
-
 });
