@@ -12,81 +12,82 @@
 </head>
 
 <body>
-
-    <div class="container1">
-        <h1>Crystals Collector!</h1>
-    </div>
-
-    <div class="container2">
-        -You will be given a random number at the start of the game.
-        <br>
-        -There are four crystals below. By clicking on a crystal you will add a specific amount of point to your
-        total score.
-        <br>
-        -You win the game by matching your total score to a random number, you lose the game if your total score goes
-        above the random.
-        <br>
-        -The value of each crystal is hidden from you until you click on it.
-        <Br>
-        -Each time when the game starts, the game will change the values of each crystal.
-        <br>
-    </div>z
-
-    <div class="row">
-        <div class="col" id="randomNumber">
-            <h3 id="randomNum">"random-number"</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="container1">
+                <h1>Crystals Collector!</h1>
+            </div>
         </div>
-        <div class="col" id="winloss">
-            <h2 id="winsText">Wins: </h2>
-            <h2 id="lossesText">Losses: </h2>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <div class="crystals">
+        <div class="row">
+            <div class="col-lg-12" id="container2">
+                -You will be given a random number at the start of the game.
+                -There are four crystals below. By clicking on a crystal you will add a specific amount of point to your
+                total score.
+                -You win the game by matching your total score to a random number, you lose the game if your total score
+                goes
+                above the random.
+                -The value of each crystal is hidden from you until you click on it.
+                -Each time when the game starts, the game will change the values of each crystal.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6" id="randomNumber">
+                <h3 id="randomNum">"random-number"</h3>
+            </div>
+            <div class="col-6" id="winloss">
+                <h2 id="winsText">Wins: </h2>
+                <h2 id="lossesText">Losses: </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6" id="crystals">
                 <button id="red"></button>
                 <button id="blue"></button>
                 <button id="white"></button>
                 <button id="yellow"></button>
             </div>
+
+
+            <div class="col-6" id="win-area"></div>
         </div>
-
-        <div class="col">
-            <div id="win-area">
-
+        <div class="row">
+            <div class="col-12" id="totalScore">
+                Your total score is:
             </div>
 
+            <div class="col-12" id="totalScore2"></div>
         </div>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0
+                BY</a></div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <style>
+            body {
+                background-image: url(assets/images/abstract.jpg);
+            }
+
+            #red {
+                background-image: url(assets/images/red.png);
+            }
+
+            #blue {
+                background-image: url(assets/images/blue.png);
+            }
+
+            #yellow {
+                background-image: url(assets/images/yellow.png);
+            }
+
+            #white {
+                background-image: url(assets/images/white.png);
+            }
+        </style>
     </div>
-
-    <div class="row" id="totalScore">
-        Your total score is:
     </div>
-
-    <div id="totalScore2"></div>
-
-    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
-            BY</a></div>
-
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <style>
-        body {
-            background-image: url(assets/images/abstract.jpg);
-        }
-        #red {
-            background-image: url(assets/images/red.png);
-        }
-        #blue {
-            background-image: url(assets/images/blue.png);
-        }
-        #yellow {
-            background-image: url(assets/images/yellow.png);
-        }
-        #white {
-            background-image: url(assets/images/white.png);
-        }
-    </style>
 </body>

@@ -1,98 +1,69 @@
 body{
-    padding:5px;
+    padding:25px;
 }
-.container1{
+#container1{
     background-color:orange;
     color:white;
+    margin-bottom:10px;
     font-size:30px;
     height:100px;
     padding:25px;
-    margin-left:25%;
-    width:50%;
     text-align:center;
     
 }
-.container2{
+#container2{
     background-color: bisque;
     color:green;
-    width:50%;
     margin-bottom:10px;
-    margin-left:25%;
     font-size:30px;
     text-align: justify;
-    line-height: 75px;
-    padding:10px;
 
 }
 #randomNumber{
     background-color:green;
     height:100px;
-    margin-left:25%;
-    width:10%;
-    padding:5px;
     color:white;
 }
 #winloss{
     background-color:darkcyan;
     height:100px;
-    width:15%;
-    margin-right:25%;
-    float:right;
-    padding:5px;
     color:white;
+    margin-bottom:10px;
 }
 #totalScore{
     background-color:orange;
-    width:300px;
-    margin:5px;
-    width:50%;
-    margin-left:25%;
     color:white;
     
 }
 #totalScore2{
     background-color: bisque;
     height:100px;
-    width:50%;
-    margin-left:25%;
     align-content: center;
     font-size:30px;
     color:green;
+    margin-bottom:10px;
 }
 
-.crystals{
-    width:50%;
-    height:125px;
-    display:flex;
+#crystals{
+    height:100px;
     background-color:darkcyan;
-    margin-left:50%;
-    padding-left:2%;
+    margin-bottom:10px;
+    
 }
 #red, #blue, #white, #yellow{
-width:100px;
-height:100px;
-margin:10px;
-background-size:95px;
+width:75px;
+height:75px;
+background-size:75px;
 background-repeat:no-repeat;
 }
 #totalScore{
     font-size:30px;
 }
-
 #win-area{
     background-color: green;
     height:100px;
-    width:50%;
-    height:125px;
-    padding:5px;
     font-size:30px;
-    float:right;
-    margin-right:50%;
     color:white;
-}
-.col{
-    padding:0px;
-    margin:0px;
 }
 
 
